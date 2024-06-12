@@ -12,6 +12,7 @@
     <title>life choices coffee</title>
 </head>
 <body>
+  
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
@@ -40,11 +41,93 @@
               <li class="nav-item">
                 <a class="nav-link" href="./html/contact.html">Contact</a>
               </li>
-            </ul>
+              <form action="/search" method="get" class="input-group search-bar search-bar--page" role="search">
+
+                <input type="search" name="q" value="" placeholder="Search" class="input-group-field" aria-label="Search our store">
+                <input type="hidden" name="type" value="product" />
+                <span class="input-group-btn">
+<button type="submit" class="btn icon-fallback-text">
+<span class="icon icon-search" aria-hidden="true"></span>
+                <span class="fallback-text">Search</span>
+                </button>
+                </span>
+            </form>
+        </li>
+
+
+
+        <li class="site-nav__item">
+            <a href="/pages/help" class="site-nav__link">
+Help
+</a>
+        </li>
+
+
+
+        <li class="site-nav__item">
+            <a href="/cart" class="site-nav__link cart-link" aria-controls="CartDrawer">Cart (0)</a>
+        </li>
+    </ul>
+</div>
+
+            
           </div>
         </div>
       </nav>
-</main>
+
+      <div class="product-container">
+        <div class="product-item">
+            <div class="product">
+                <div class="product-top">
+                    <a href="./html/products.html" class="product-link">
+                        <div class="product__media">
+                            <div class="product__img-hover img-lazyload" ></div>
+                            <img class="product__img img-lazyload" src="https://mapulecodes.github.io/fridayimages/images2/cocoa.jpg" alt="cocoa coffee">
+                        </div>
+                    </a>
+                    <div class="product-btn">
+                        <a href="./html/products.html" class="c-btn">Select Options</a>
+                    </div>
+                </div>
+                <a href="./html/products.html" class="product-link">
+                    <div class="product__details">
+                        <h3 class="product__title">Cocoa,Toasted Almond Coffee</h3>
+                        <div class="product__price">
+                            <span class="money">R150.00</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <div class="product-item">
+            <div class="product">
+                <div class="product-top">
+                    <a href="./html/products.html" class="product-link">
+                        <div class="product__media">
+                            <div class="product__img-hover img-lazyload" ></div>
+                            <img class="product__img img-lazyload" src="https://mapulecodes.github.io/fridayimages/images2/maplesyrup.jpg" alt="Red Argyle iPhone Case">
+                        </div>
+                    </a>
+                    <div class="product-btn">
+                        <a href="./html/products.html" class="c-btn">Select Options</a>
+                    </div>
+                </div>
+                <a href="./html/products.html" class="product-link">
+                    <div class="product__details">
+                        <h3 class="product__title">Maple sryup, and almond coffee</h3>
+                        <div class="product__price">
+                            <span class="money">R150</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section__link">
+        <a href="./html/products.html" class="link link--arrow">View all</a>
+    </div>
 <footer class="container-fluid">
  <div class="row">
      <p class="lead">Copyright &copy;
