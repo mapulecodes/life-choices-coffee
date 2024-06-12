@@ -40,7 +40,36 @@
               <li class="nav-item">
                 <a class="nav-link" href="./html/contact.html">Contact</a>
               </li>
-            </ul>
+              <form action="/search" method="get" class="input-group search-bar search-bar--page" role="search">
+
+                <input type="search" name="q" value="" placeholder="Search" class="input-group-field" aria-label="Search our store">
+                <input type="hidden" name="type" value="product" />
+                <span class="input-group-btn">
+<button type="submit" class="btn icon-fallback-text">
+<span class="icon icon-search" aria-hidden="true"></span>
+                <span class="fallback-text">Search</span>
+                </button>
+                </span>
+            </form>
+        </li>
+
+
+
+        <li class="site-nav__item">
+            <a href="/pages/help" class="site-nav__link">
+Help
+</a>
+        </li>
+
+
+
+        <li class="site-nav__item">
+            <a href="/cart" class="site-nav__link cart-link" aria-controls="CartDrawer">Cart (0)</a>
+        </li>
+    </ul>
+</div>
+
+            
           </div>
         </div>
       </nav>
